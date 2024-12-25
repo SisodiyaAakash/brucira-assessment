@@ -1,0 +1,128 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* Theme Colors */
+  --background: #ffffff;
+  --foreground: #111010;
+  --red: #ef001c;
+
+  /* Typography */
+  --headingfont: "TWK Everett";
+  --bodyfont: "Open Sans";
+  --regular: 400;
+  --medium: 500;
+  --semibold: 600;
+  --bold: 700;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #111010;
+    --foreground: #ffffff;
+  }
+}
+
+/* Heading font */
+@font-face {
+  font-family: var(--headingfont);
+  src: url("/fonts/heading/TWKEverett-Medium.woff2") format("woff2");
+  font-weight: var(--medium);
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: var(--headingfont);
+  src: url("/fonts/heading/TWKEverett-MediumItalic.woff2") format("woff2");
+  font-weight: var(--medium);
+  font-style: italic;
+  font-display: swap;
+}
+
+/* Body font */
+@font-face {
+  font-family: var(--bodyfont);
+  src: url("/fonts/body/OpenSans-Regular.woff2") format("woff2");
+  font-weight: var(--regular);
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: var(--bodyfont);
+  src: url("/fonts/body/OpenSans-Italic.woff2") format("woff2");
+  font-weight: var(--regular);
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: var(--bodyfont);
+  src: url("/fonts/body/OpenSans-SemiBold.woff2") format("woff2");
+  font-weight: var(--semibold);
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: var(--bodyfont);
+  src: url("/fonts/body/OpenSans-SemiBoldItalic.woff2") format("woff2");
+  font-weight: var(--semibold);
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: var(--bodyfont);
+  src: url("/fonts/body/OpenSans-Bold.woff2") format("woff2");
+  font-weight: var(--bold);
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: var(--bodyfont);
+  src: url("/fonts/body/OpenSans-BoldItalic.woff2") format("woff2");
+  font-weight: var(--bold);
+  font-style: italic;
+  font-display: swap;
+}
+
+body {
+  @apply font-body;
+  color: var(--foreground);
+  background: var(--background);
+}
+
+@layer base {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-heading font-medium;
+  }
+  p {
+    @apply font-body font-normal;
+  }
+
+  button,
+  .brucira-btn {
+    @apply text-base font-body font-bold uppercase flex items-center gap-2.5 px-8 py-5 rounded-[34px] bg-red text-white border border-red duration-300 hover:bg-transparent hover:text-red cursor-pointer;
+  }
+}
+
+@layer utilities {
+  ::-webkit-scrollbar {
+    @apply w-1 h-1;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    @apply bg-[#4b5563] rounded;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    @apply bg-[#374151];
+  }
+
+  ::-webkit-scrollbar-track {
+    @apply bg-[#e5e7eb];
+  }
+}
