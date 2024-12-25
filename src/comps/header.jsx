@@ -25,8 +25,8 @@ const Header = () => {
     const { logo, menu, cta } = headerData;
 
     return (
-        <header className="header max-h-20 md:max-h-[86px] py-6 border-b border-black border-opacity-10 px-4">
-            <div className="header-inner-wrap md:container mx-auto flex flex-wrap items-center justify-between gap-8 lg:gap-10">
+        <header className="header sticky top-0 max-h-20 bg-background md:max-h-[86px] py-6 border-b border-black border-opacity-10 z-[999]">
+            <div className="header-inner-wrap container flex flex-wrap items-center justify-between gap-8 lg:gap-10">
                 <div className="top-nav w-full md:w-auto flex justify-between items-center">
                     {/* Logo */}
                     <div className="logo">

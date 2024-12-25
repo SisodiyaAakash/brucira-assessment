@@ -1,0 +1,103 @@
+{
+  "heroSection": {
+    "title": "We are a <br /> Global <span>Production</span> <br />AGENCY",
+    "subtitle": "Designed with the specific needs of large B2B enterprises in mind, our platform offers a comprehensive solution to simplify.",
+    "ctaButton": {
+      "text": "Get professional video services",
+      "link": "#",
+      "isIcon": true
+    },
+    "videoArea": {
+      "thumbnailImg": "",
+      "playBtnText": "Play Showreel",
+      "videoUrl": "#"
+    }
+  },
+  "partnersLogoSection": {
+    "title": ""
+  },
+  "faq1Section": {
+    "title": "Our expertise and passion<br /> breathe life into your narratives",
+    "accordion": [
+      {
+        "image": "",
+        "title": "Innovative",
+        "bodyText": "Creation, ensuring your messages resonate worldwide. From concept to distribution, our platform serves as your strategic partner."
+      },
+      {
+        "image": "",
+        "title": "Reliable",
+        "bodyText": "Creation, ensuring your messages resonate worldwide. From concept to distribution, our platform serves as your strategic partner."
+      },
+      {
+        "image": "",
+        "title": "Quality",
+        "bodyText": "Creation, ensuring your messages resonate worldwide. From concept to distribution, our platform serves as your strategic partner."
+      }
+    ]
+  },
+  "globalNumberSection": {
+    "title": "We are global"
+  },
+  "testimonialSection": {
+    "title": "Testimony from our partners"
+  },
+  "faq2Section": {
+    "title": "Frequently asked <br/>questions",
+    "accordion": [
+      {
+        "title": "How do I sign up?",
+        "bodyText": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
+      },
+      {
+        "title": "What information do I need to provide during the sign-up process?",
+        "bodyText": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
+      },
+      {
+        "title": "Is my information secure during the sign-up process?",
+        "bodyText": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
+      },
+      {
+        "title": "Who can apply?",
+        "bodyText": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
+      },
+      {
+        "title": "What are the terms and conditions for the collaboration?",
+        "bodyText": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
+      },
+      {
+        "title": "What is the minimum duration of the contract?",
+        "bodyText": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
+      }
+    ]
+  },
+  "contactSection": {
+    "title": "Lets start something <span>new</span> together",
+    "accordion": [
+      {
+        "title": "How do I sign up?",
+        "bodyText": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
+      },
+      {
+        "title": "What information do I need to provide during the sign-up process?",
+        "bodyText": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
+      },
+      {
+        "title": "Is my information secure during the sign-up process?",
+        "bodyText": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
+      },
+      {
+        "title": "Who can apply?",
+        "bodyText": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
+      },
+      {
+        "title": "What are the terms and conditions for the collaboration?",
+        "bodyText": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
+      },
+      {
+        "title": "What is the minimum duration of the contract?",
+        "bodyText": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
+      }
+    ]
+  }
+}

@@ -26,14 +26,14 @@
 
 /* Heading font */
 @font-face {
-  font-family: var(--headingfont);
+  font-family: "TWK Everett";
   src: url("/fonts/heading/TWKEverett-Medium.woff2") format("woff2");
   font-weight: var(--medium);
   font-style: normal;
   font-display: swap;
 }
 @font-face {
-  font-family: var(--headingfont);
+  font-family: "TWK Everett";
   src: url("/fonts/heading/TWKEverett-MediumItalic.woff2") format("woff2");
   font-weight: var(--medium);
   font-style: italic;
@@ -42,42 +42,42 @@
 
 /* Body font */
 @font-face {
-  font-family: var(--bodyfont);
+  font-family: "Open Sans";
   src: url("/fonts/body/OpenSans-Regular.woff2") format("woff2");
   font-weight: var(--regular);
   font-style: normal;
   font-display: swap;
 }
 @font-face {
-  font-family: var(--bodyfont);
+  font-family: "Open Sans";
   src: url("/fonts/body/OpenSans-Italic.woff2") format("woff2");
   font-weight: var(--regular);
   font-style: italic;
   font-display: swap;
 }
 @font-face {
-  font-family: var(--bodyfont);
+  font-family: "Open Sans";
   src: url("/fonts/body/OpenSans-SemiBold.woff2") format("woff2");
   font-weight: var(--semibold);
   font-style: normal;
   font-display: swap;
 }
 @font-face {
-  font-family: var(--bodyfont);
+  font-family: "Open Sans";
   src: url("/fonts/body/OpenSans-SemiBoldItalic.woff2") format("woff2");
   font-weight: var(--semibold);
   font-style: italic;
   font-display: swap;
 }
 @font-face {
-  font-family: var(--bodyfont);
+  font-family: "Open Sans";
   src: url("/fonts/body/OpenSans-Bold.woff2") format("woff2");
   font-weight: var(--bold);
   font-style: normal;
   font-display: swap;
 }
 @font-face {
-  font-family: var(--bodyfont);
+  font-family: "Open Sans";
   src: url("/fonts/body/OpenSans-BoldItalic.woff2") format("woff2");
   font-weight: var(--bold);
   font-style: italic;
@@ -85,7 +85,7 @@
 }
 
 body {
-  @apply font-body;
+  @apply font-body font-normal;
   color: var(--foreground);
   background: var(--background);
 }
@@ -97,15 +97,15 @@ body {
   h4,
   h5,
   h6 {
-    @apply font-heading font-medium;
+    @apply font-heading font-medium text-foreground;
   }
   p {
-    @apply font-body font-normal;
+    @apply font-body font-normal text-foreground;
   }
 
   button,
   .brucira-btn {
-    @apply text-base font-body font-bold uppercase flex items-center gap-2.5 px-8 py-5 rounded-[34px] bg-red text-white border border-red duration-300 hover:bg-transparent hover:text-red cursor-pointer;
+    @apply text-base md:text-lg font-body font-bold text-center uppercase max-w-max flex items-center justify-center gap-2.5 px-6 py-3 md:px-8 md:py-5 rounded-[34px] bg-red text-white border border-red duration-300 hover:bg-transparent hover:text-red cursor-pointer;
   }
 }
 

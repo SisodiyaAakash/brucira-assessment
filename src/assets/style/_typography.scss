@@ -1,0 +1,30 @@
+$red: #ef001c;
+
+body {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    strong,
+    span {
+      color: $red;
+    }
+  }
+
+  button,
+  .brucira-btn {
+    img {
+      &:not(.custom) {
+        filter: invert(1) brightness(200);
+      }
+    }
+
+    &:hover {
+      img {
+        filter: invert(0) brightness(1);
+      }
+    }
+  }
+}

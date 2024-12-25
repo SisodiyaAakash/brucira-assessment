@@ -26,6 +26,14 @@ header.header {
         .cta {
           @media screen and (max-width: 767px) {
             margin-top: auto;
+            width: 100%;
+          }
+
+          .brucira-btn {
+            @media screen and (max-width: 767px) {
+              width: 100%;
+              max-width: 100%;
+            }
           }
         }
       }
