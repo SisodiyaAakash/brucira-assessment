@@ -56,11 +56,11 @@ const Header = () => {
                             <li key={index} className="menu-item text-foreground w-full md:w-auto">
                                 <a
                                     onClick={() => setMenuOpen(!menuOpen)}
-                                    href={item.link} className="group block menu-link w-full md:w-auto uppercase pr-6 relative h-5 opacity-40 hover:opacity-100">
+                                    href={item.link} className="group block menu-link w-full md:w-auto uppercase pr-6 relative h-5 opacity-40 dark:opacity-80 hover:opacity-100">
                                     {item.title}
 
                                     <img className="w-5 h-5 absolute right-0 top-0 bottom-0 invisible group-hover:visible group-hover:rotate-90 duration-300" src={arrowTopRightRed} alt="Arrow Icon" />
-                                    <img className="w-5 h-5 absolute right-0 top-0 bottom-0 group-hover:invisible group-hover:rotate-90 duration-300" src={arrowTopRight} alt="Arrow Icon" />
+                                    <img className="w-5 h-5 absolute right-0 top-0 bottom-0 group-hover:invisible group-hover:rotate-90 duration-300 dark:brightness-[1000]" src={arrowTopRight} alt="Arrow Icon" />
                                 </a>
                             </li>
                         ))}
