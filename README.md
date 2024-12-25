@@ -65,7 +65,7 @@ The project is hosted on **Vercel** for live preview and continuous deployment. 
 
 ### Live URL
 
-[Brucira Assessment](#)
+[Brucira Assessment](https://brucira-assessment.vercel.app/)
 
 ---
 
