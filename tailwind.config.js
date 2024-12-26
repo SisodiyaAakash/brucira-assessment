@@ -26,7 +26,7 @@ export default {
         "4xl": ["32px", { lineHeight: "38px", letterSpacing: "-0.04em" }],
         "3xl": ["24px", { lineHeight: "28px", letterSpacing: "-0.04em" }],
         "2xl": ["20px", { lineHeight: "28px", letterSpacing: "-0.04em" }],
-        xl: ["18px", { lineHeight: "26px", letterSpacing: "-0.01em" }],
+        xl: ["18px", { lineHeight: "26px", letterSpacing: "-0.02em" }],
         lg: ["16px", { lineHeight: "20px", letterSpacing: "-0.04em" }],
         base: ["14px", { lineHeight: "19px", letterSpacing: "-0.04em" }],
         sm: ["13px", { lineHeight: "19px", letterSpacing: "-0.004em" }],

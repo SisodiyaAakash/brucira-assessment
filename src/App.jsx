@@ -4,6 +4,7 @@ import Loader from "./comps/loading";
 import Header from "./comps/header";
 import HeroSection from "./comps/heroSection";
 import PartnersLogoSection from "./comps/partnersLogoSection";
+import Faq1Section from "./comps/faq1Section";
 
 function App() {
   const [homeData, setHomeData] = useState(null);
@@ -50,6 +51,7 @@ function App() {
         team={teamData.team}
       />
       <PartnersLogoSection data={homeData.partnersLogoSection} />
+      <Faq1Section data={homeData.faq1Section} />
     </>
   );
 }
