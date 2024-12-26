@@ -91,8 +91,8 @@ const HeroSection = ({ data, team }) => {
 
             {/* Video Popup */}
             {isVideoOpen && (
-                <div className="fixed inset-0 flex items-center justify-center bg-foreground bg-opacity-75 z-[9999]">
-                    <div className="relative bg-background rounded-lg overflow-hidden w-11/12 max-w-3xl">
+                <div className="fixed inset-0 flex items-center justify-center bg-white dark:bg-black bg-opacity-60 dark:bg-opacity-40 backdrop-blur-md z-[9999] ">
+                    <div className="relative bg-white dark:bg-black rounded-lg overflow-hidden w-11/12 max-w-3xl">
                         <button
                             onClick={toggleVideoPopup}
                             className="absolute top-2 right-2 rounded-full w-8 h-8 flex items-center justify-center z-50 hover:bg-background"
