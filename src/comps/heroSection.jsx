@@ -11,7 +11,7 @@ const HeroSection = ({ data, team }) => {
 
     return (
         <section className="hero-section py-7 md:py-9">
-            <div className="hero-section-inner-wrap container">
+            <div className="inner-wrap">
                 {data.title && (
                     <h1
                         className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl mb-8 md:mb-10 lg:mb-12"
@@ -80,7 +80,7 @@ const HeroSection = ({ data, team }) => {
 
                     {data.videoArea && (
                         // Video Area
-                        <div className="video-area relative w-full md:max-w-64 md:w-1/3 rounded-lg overflow-hidden mt-8 md:mt-0">
+                        <div className="video-area relative w-full md:max-w-64 md:w-1/3 rounded-lg overflow-hidden">
                             {data.videoArea.thumbnailImg && (
                                 <img src={data.videoArea.thumbnailImg} className="w-full h-auto" />
                             )}

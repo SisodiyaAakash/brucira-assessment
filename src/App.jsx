@@ -5,10 +5,12 @@ import Header from "./comps/header";
 import HeroSection from "./comps/heroSection";
 import PartnersLogoSection from "./comps/partnersLogoSection";
 import Faq1Section from "./comps/faq1Section";
+import GlobalNumberSection from "./comps/globalNumberSection";
 
 function App() {
   const [homeData, setHomeData] = useState(null);
   const [teamData, setTeamData] = useState(null);
+  const [statisticsData, setStatisticsData] = useState(null);
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
@@ -22,9 +24,14 @@ function App() {
         const teamResponse = await fetch("/json/team.json");
         const teamJson = await teamResponse.json();
 
+        // Fetch statistics.json
+        const statisticsResponse = await fetch("/json/statistics.json");
+        const statisticsJson = await statisticsResponse.json();
+
         // Set both data states
         setHomeData(homeJson);
         setTeamData(teamJson);
+        setStatisticsData(statisticsJson);
       } catch (error) {
         console.error("Error loading JSON data:", error);
       } finally {
@@ -39,7 +46,7 @@ function App() {
     return <Loader />;
   }
 
-  if (!homeData || !teamData) {
+  if (!homeData || !teamData || !statisticsData) {
     return <div>Error loading data.</div>;
   }
 
@@ -52,6 +59,10 @@ function App() {
       />
       <PartnersLogoSection data={homeData.partnersLogoSection} />
       <Faq1Section data={homeData.faq1Section} />
+      <GlobalNumberSection
+        data={homeData.globalNumberSection}
+        stats={statisticsData.stats}
+      />
     </>
   );
 }

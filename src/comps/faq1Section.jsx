@@ -17,7 +17,7 @@ function Faq1Section({ data }) {
 
     return (
         <section className="faq-section py-9">
-            <div className="faq-section-inner-wrap container mx-auto">
+            <div className="inner-wrap">
                 <h2
                     className="text-2xl md:text-3xl lg:text-4xl xl:text-5xl mb-8 md:mb-12 lg:mb-16"
                     dangerouslySetInnerHTML={{ __html: data.title }}

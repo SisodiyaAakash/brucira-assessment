@@ -90,6 +90,14 @@ body {
   background: var(--background);
 }
 
+.inner-wrap {
+  @apply container;
+}
+
+.section-title  {
+  @apply flex items-center gap-2 md:gap-3 text-2xl font-body font-semibold text-red uppercase tracking-[0.06em] before:content-[""] before:block before:min-w-10 md:before:min-w-12 lg:before:min-w-[54px] before:w-10 md:before:w-12 lg:before:w-[54px] before:h-[1px] before:bg-red;
+}
+
 @layer base {
   h1,
   h2,

@@ -1,0 +1,28 @@
+{
+  "stats": [
+    {
+      "statValue": 60,
+      "prefix": "",
+      "suffix": "+",
+      "label": "brands<br /> partnered with"
+    },
+    {
+      "statValue": 3000,
+      "prefix": "",
+      "suffix": "+",
+      "label": "brand content<br /> assets created"
+    },
+    {
+      "statValue": 1000,
+      "prefix": "",
+      "suffix": "+",
+      "label": "global partners and<br /> collaborators"
+    },
+    {
+      "statValue": 100,
+      "prefix": "",
+      "suffix": "+",
+      "label": "cities<br /> wordwide"
+    }
+  ]
+}
