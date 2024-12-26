@@ -3,6 +3,7 @@ import './assets/style/App.scss';
 import Loader from "./comps/loading";
 import Header from "./comps/header";
 import HeroSection from "./comps/heroSection";
+import PartnersLogoSection from "./comps/partnersLogoSection";
 
 function App() {
   const [homeData, setHomeData] = useState(null);
@@ -48,6 +49,7 @@ function App() {
         data={homeData.heroSection}
         team={teamData.team}
       />
+      <PartnersLogoSection data={homeData.partnersLogoSection} />
     </>
   );
 }

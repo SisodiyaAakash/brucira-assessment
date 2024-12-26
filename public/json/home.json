@@ -14,7 +14,54 @@
     }
   },
   "partnersLogoSection": {
-    "title": ""
+    "title": "",
+    "partners": [
+      {
+        "logo": "/media/partners/darwinbox.webp",
+        "partnerName": "",
+        "link": "#"
+      },
+      {
+        "logo": "/media/partners/wipro.webp",
+        "partnerName": "Wipro",
+        "link": "#"
+      },
+      {
+        "logo": "/media/partners/sequoia-capital.webp",
+        "partnerName": "Sequoia Capital",
+        "link": "#"
+      },
+      {
+        "logo": "/media/partners/indeed.webp",
+        "partnerName": "Indeed",
+        "link": "#"
+      },
+      {
+        "logo": "/media/partners/my-11-circle.webp",
+        "partnerName": "My 11 Circle",
+        "link": "#"
+      },
+      {
+        "logo": "/media/partners/ikea.webp",
+        "partnerName": "Ikea",
+        "link": "#"
+      },
+      {
+        "logo": "/media/partners/india-gold.webp",
+        "partnerName": "India Gold",
+        "link": "#"
+      },
+      {
+        "logo": "/media/partners/healthify-me.webp",
+        "partnerName": "Healthify Me",
+        "link": "#"
+      },
+      {
+        "logo": "/media/partners/swiggy.webp",
+        "partnerName": "Swiggy",
+        "link": "#"
+      }
+    ]
   },
   "faq1Section": {
     "title": "Our expertise and passion<br /> breathe life into your narratives",
