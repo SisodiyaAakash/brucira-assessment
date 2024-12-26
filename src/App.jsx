@@ -1,22 +1,31 @@
 import React, { useState, useEffect } from "react";
-import './assets/style/App.scss'
+import './assets/style/App.scss';
 import Loader from "./comps/loading";
-import Header from "./comps/header"
+import Header from "./comps/header";
 import HeroSection from "./comps/heroSection";
 
 function App() {
-  const [data, setData] = useState(null);
+  const [homeData, setHomeData] = useState(null);
+  const [teamData, setTeamData] = useState(null);
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await fetch("/json/home.json");
-        const json = await response.json();
-        setData(json);
-        setLoading(false);
+        // Fetch home.json
+        const homeResponse = await fetch("/json/home.json");
+        const homeJson = await homeResponse.json();
+
+        // Fetch team.json
+        const teamResponse = await fetch("/json/team.json");
+        const teamJson = await teamResponse.json();
+
+        // Set both data states
+        setHomeData(homeJson);
+        setTeamData(teamJson);
       } catch (error) {
         console.error("Error loading JSON data:", error);
+      } finally {
         setLoading(false);
       }
     };
@@ -28,14 +37,17 @@ function App() {
     return <Loader />;
   }
 
-  if (!data) {
+  if (!homeData || !teamData) {
     return <div>Error loading data.</div>;
   }
 
   return (
     <>
       <Header />
-      <HeroSection data={data.heroSection} />
+      <HeroSection
+        data={homeData.heroSection}
+        team={teamData.team}
+      />
     </>
   );
 }

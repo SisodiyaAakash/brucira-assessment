@@ -8,9 +8,9 @@
       "isIcon": true
     },
     "videoArea": {
-      "thumbnailImg": "",
+      "thumbnailImg": "/media/play-showreel.webp",
       "playBtnText": "Play Showreel",
-      "videoUrl": "#"
+      "videoUrl": "https://www.youtube.com/embed/po-ZTD5AQos"
     }
   },
   "partnersLogoSection": {

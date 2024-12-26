@@ -1,0 +1,18 @@
+{
+  "team": [
+    {
+      "profile": "/media/team/milly-cyrus.webp",
+      "intro": "All-round advertising go to lady. Has a thing for stories: she calls this the side effect of a life lived with plot twists.",
+      "firstName": "Milly",
+      "lastName": "Cyrus",
+      "designation": "Global Lead"
+    },
+    {
+      "profile": "/media/team/vinita-singh.webp",
+      "intro": "All-round advertising go to lady. Has a thing for stories: she calls this the side effect of a life lived with plot twists.",
+      "firstName": "Vinita",
+      "lastName": "Singh",
+      "designation": "Asst. Global Lead"
+    }
+  ]
+}
