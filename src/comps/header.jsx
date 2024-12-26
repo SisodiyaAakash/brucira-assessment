@@ -30,7 +30,11 @@ const Header = () => {
                 <div className="top-nav w-full md:w-auto flex justify-between items-center">
                     {/* Logo */}
                     <div className="logo">
-                        <img className="max-w-44 lg:max-w-52" src={logo.image.src} alt={logo.image.alt} />
+                        {logo?.image?.src ? (
+                            <img className="max-w-44 lg:max-w-52" src={logo.image.src} alt={logo.image.alt || "Logo"} />
+                        ) : (
+                            <span className="text-2xl text-foreground">Brucira</span>
+                        )}
                     </div>
 
                     <a
@@ -52,7 +56,7 @@ const Header = () => {
                 {/* Navigation Menu */}
                 <nav className={`menu bg-background duration-300 ${menuOpen ? "open-menu" : ""}`}>
                     <ul className="menu-list flex flex-wrap items-center flex-col md:flex-row gap-8 lg:gap-10">
-                        {menu.map((item, index) => (
+                        {menu && menu.map((item, index) => (
                             <li key={index} className="menu-item text-foreground w-full md:w-auto">
                                 <a
                                     onClick={() => setMenuOpen(!menuOpen)}
@@ -68,8 +72,8 @@ const Header = () => {
                         <div className="cta flex flex-wrap items-center gap-8 lg:gap-10">
                             <a
                                 onClick={() => setMenuOpen(!menuOpen)}
-                                href={cta.button.link} className="brucira-btn text-sm px-4 py-2.5">
-                                {cta.button.text}
+                                href={cta.button.link ? cta.button.link : "#"} className="brucira-btn text-sm px-4 py-2.5">
+                                {cta.button.text ? cta.button.text : "Click"}
                             </a>
                         </div>
                     </ul>

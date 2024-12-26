@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import './assets/style/App.scss';
 import Loader from "./comps/loading";
 import Header from "./comps/header";
+import Footer from "./comps/footer";
 import HeroSection from "./comps/heroSection";
 import PartnersLogoSection from "./comps/partnersLogoSection";
 import Faq1Section from "./comps/faq1Section";
@@ -53,6 +54,7 @@ function App() {
   return (
     <>
       <Header />
+
       <HeroSection
         data={homeData.heroSection}
         team={teamData.team}
@@ -63,6 +65,8 @@ function App() {
         data={homeData.globalNumberSection}
         stats={statisticsData.stats}
       />
+
+      <Footer />
     </>
   );
 }

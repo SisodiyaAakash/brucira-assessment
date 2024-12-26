@@ -2,7 +2,7 @@
   "header": {
     "logo": {
       "image": {
-        "src": "/logo.png",
+        "src": "",
         "alt": "Company Logo"
       }
     },
@@ -31,33 +31,33 @@
     "mainMenu": [
       {
         "title": "Company",
-        "items": [{ "title": "Who Are We", "link": "/who-are-we" }]
+        "subMenu": [{ "title": "Who Are We", "link": "#" }]
       },
       {
         "title": "Resources",
-        "items": [{ "title": "Blog", "link": "/blog" }]
+        "subMenu": [{ "title": "Blog", "link": "#" }]
       },
       {
         "title": "Work",
-        "items": [
-          { "title": "Video", "link": "/work/video" },
-          { "title": "Shoot", "link": "/work/shoot" },
-          { "title": "Post", "link": "/work/post" }
+        "subMenu": [
+          { "title": "Video", "link": "#" },
+          { "title": "Shoot", "link": "#" },
+          { "title": "Post", "link": "#" }
         ]
       },
       {
         "title": "Services",
-        "items": [
-          { "title": "Video", "link": "/services/video" },
-          { "title": "Shoot", "link": "/services/shoot" },
-          { "title": "Post", "link": "/services/post" }
+        "subMenu": [
+          { "title": "Video", "link": "#" },
+          { "title": "Shoot", "link": "#" },
+          { "title": "Post", "link": "#" }
         ]
       },
       {
         "title": "Contact",
-        "items": [
-          { "title": "Talk to us", "link": "/contact/talk-to-us" },
-          { "title": "Collab", "link": "/contact/collab" }
+        "subMenu": [
+          { "title": "Talk to us", "link": "#" },
+          { "title": "Collab", "link": "#" }
         ]
       }
     ],
@@ -67,15 +67,15 @@
     "legalMenu": [
       {
         "title": "Privacy Policy",
-        "link": "/privacy-policy"
+        "link": "#"
       },
       {
         "title": "Legal",
-        "link": "/legal"
+        "link": "#"
       },
       {
         "title": "Terms & Conditions",
-        "link": "/terms-and-conditions"
+        "link": "#"
       }
     ]
   }

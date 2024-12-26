@@ -107,7 +107,7 @@ body {
   h6 {
     @apply font-heading font-medium text-foreground;
   }
-  p {
+  p, li {
     @apply font-body font-normal text-foreground;
   }
 
