@@ -37,7 +37,7 @@ const HeroSection = ({ data, team }) => {
                             )}
 
                             {
-                                team && (
+                                team && team.length > 0 && (
                                     <div className="global-services-area flex items-center gap-3">
                                         <div className="team-profile-area flex">
                                             {team.map((member, index) => (

@@ -1,13 +1,11 @@
 import { useEffect, useState } from "react";
-import arrowTopRight from "../assets/icons/arrow-top-right.svg";
-import arrowTopRightRed from "../assets/icons/arrow-top-right-red.svg";
-import Loader from "./loading";
+import Loader from "../comps/loading";
 
 const Footer = () => {
     const [footerData, setFooterData] = useState(null);
 
     useEffect(() => {
-        fetch("/json/comps.json")
+        fetch("/json/navigation.json")
             .then((response) => response.json())
             .then((data) => {
                 setFooterData(data.footer);
@@ -29,29 +27,31 @@ const Footer = () => {
                 <div className="footer-top py-14 md:py-16 lg:py-20">
                     <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-y-10 gap-x-8">
                         {
-                            mainMenu.map((item, index) => (
-                                <div key={index}>
-                                    {item.title && (
-                                        <h5 className="text-3xl uppercase leading-none mb-5 md:mb-6 lg:mb-[26px]">
-                                            {item.title}
-                                        </h5>
-                                    )}
-                                    {item.subMenu && (
-                                        <ul className="space-y-2">
-                                            {item.subMenu.map((subItem, subIndex) => (
-                                                <li key={subIndex} className="">
-                                                    <a
-                                                        href={subItem.link}
-                                                        className="text-lg relative after:content-[''] after:w-0 after:h-0.5 after:bg-foreground after:absolute after:bottom-0 after:left-0 after:duration-300 hover:after:w-full hover:after:right-0"
-                                                    >
-                                                        {subItem.title}
-                                                    </a>
-                                                </li>
-                                            ))}
-                                        </ul>
-                                    )}
-                                </div>
-                            ))
+                            mainMenu && mainMenu.length > 0 && (
+                                mainMenu.map((item, index) => (
+                                    <div key={index}>
+                                        {item.title && (
+                                            <h5 className="text-3xl uppercase leading-none mb-5 md:mb-6 lg:mb-[26px]">
+                                                {item.title}
+                                            </h5>
+                                        )}
+                                        {item.subMenu && item.subMenu.length > 0 && (
+                                            <ul className="space-y-2">
+                                                {item.subMenu.map((subItem, subIndex) => (
+                                                    <li key={subIndex} className="">
+                                                        <a
+                                                            href={subItem.link}
+                                                            className="text-lg relative after:content-[''] after:w-0 after:h-0.5 after:bg-foreground after:absolute after:bottom-0 after:left-0 after:duration-300 hover:after:w-full hover:after:right-0"
+                                                        >
+                                                            {subItem.title}
+                                                        </a>
+                                                    </li>
+                                                ))}
+                                            </ul>
+                                        )}
+                                    </div>
+                                ))
+                            )
                         }
                     </div>
                 </div>
@@ -60,7 +60,7 @@ const Footer = () => {
                         {copyrightContent.text ? copyrightContent.text : "Copyright 2024"}
                     </p>
                     {
-                        legalMenu && (
+                        legalMenu && legalMenu.length > 0 && (
                             <ul className="flex gap-x-8 gap-y-6">
                                 {legalMenu.map((item, index) => (
                                     <li key={index}>

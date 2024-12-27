@@ -1,6 +1,6 @@
 import React, { useEffect, useRef } from "react";
 
-function PartnersLogoSection({ data }) {
+const PartnersLogoSection = ({ data }) => {
     const containerRef = useRef(null);
     const animationRef = useRef(null);
 
@@ -61,7 +61,7 @@ function PartnersLogoSection({ data }) {
                     className="flex whitespace-nowrap will-change-transform gap-12 items-center"
                     ref={containerRef}
                 >
-                    {data.partners && data.partners.map((partner, index) => (
+                    {data.partners && data.partners.length > 0 && data.partners.map((partner, index) => (
                         <div
                             key={index}
                             className="flex-shrink-0 max-w-28 md:max-w-32 lg:max-w-36 mx-2"

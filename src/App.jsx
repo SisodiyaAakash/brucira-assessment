@@ -1,17 +1,19 @@
 import React, { useState, useEffect } from "react";
 import './assets/style/App.scss';
 import Loader from "./comps/loading";
-import Header from "./comps/header";
-import Footer from "./comps/footer";
-import HeroSection from "./comps/heroSection";
-import PartnersLogoSection from "./comps/partnersLogoSection";
-import Faq1Section from "./comps/faq1Section";
-import GlobalNumberSection from "./comps/globalNumberSection";
+import Header from "./sections/header";
+import Footer from "./sections/footer";
+import HeroSection from "./sections/heroSection";
+import PartnersLogoSection from "./sections/partnersLogoSection";
+import Faq1Section from "./sections/faq1Section";
+import GlobalNumberSection from "./sections/globalNumberSection";
+import TestimonialSection from "./sections/testimonialSection";
 
 function App() {
   const [homeData, setHomeData] = useState(null);
   const [teamData, setTeamData] = useState(null);
   const [statisticsData, setStatisticsData] = useState(null);
+  const [reviewsData, setReviewsData] = useState(null);
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
@@ -22,17 +24,22 @@ function App() {
         const homeJson = await homeResponse.json();
 
         // Fetch team.json
-        const teamResponse = await fetch("/json/team.json");
+        const teamResponse = await fetch("/json/comps/team.json");
         const teamJson = await teamResponse.json();
 
         // Fetch statistics.json
-        const statisticsResponse = await fetch("/json/statistics.json");
+        const statisticsResponse = await fetch("/json/comps/statistics.json");
         const statisticsJson = await statisticsResponse.json();
+
+        // Fetch reviews.json
+        const reviewsResponse = await fetch("/json/comps/reviews.json");
+        const reviewsJson = await reviewsResponse.json();
 
         // Set both data states
         setHomeData(homeJson);
         setTeamData(teamJson);
         setStatisticsData(statisticsJson);
+        setReviewsData(reviewsJson);
       } catch (error) {
         console.error("Error loading JSON data:", error);
       } finally {
@@ -64,6 +71,10 @@ function App() {
       <GlobalNumberSection
         data={homeData.globalNumberSection}
         stats={statisticsData.stats}
+      />
+      <TestimonialSection
+        data={homeData.testimonialSection}
+        reviews={reviewsData.reviews}
       />
 
       <Footer />

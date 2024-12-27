@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-function Faq1Section({ data }) {
+const Faq1Section = ({ data }) => {
     // State to track the active accordion index
     const [activeIndex, setActiveIndex] = useState(0);
 
@@ -23,7 +23,7 @@ function Faq1Section({ data }) {
                     dangerouslySetInnerHTML={{ __html: data.title }}
                 />
 
-                {data.accordion && (
+                {data.accordion && data.accordion.length > 0 && (
                     <div className="flex flex-col md:flex-row items-start md:items-center gap-y-8">
                         <div className="image-area w-full md:w-1/3 flex justify-center">
                             {data.accordion[activeIndex]?.image && (

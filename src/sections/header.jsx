@@ -1,14 +1,14 @@
 import { useEffect, useState } from "react";
 import arrowTopRight from "../assets/icons/arrow-top-right.svg";
 import arrowTopRightRed from "../assets/icons/arrow-top-right-red.svg";
-import Loader from "./loading";
+import Loader from "../comps/loading";
 
 const Header = () => {
     const [headerData, setHeaderData] = useState(null);
     const [menuOpen, setMenuOpen] = useState(false);
 
     useEffect(() => {
-        fetch("/json/comps.json")
+        fetch("/json/navigation.json")
             .then((response) => response.json())
             .then((data) => {
                 setHeaderData(data.header);
@@ -56,7 +56,7 @@ const Header = () => {
                 {/* Navigation Menu */}
                 <nav className={`menu bg-background duration-300 ${menuOpen ? "open-menu" : ""}`}>
                     <ul className="menu-list flex flex-wrap items-center flex-col md:flex-row gap-8 lg:gap-10">
-                        {menu && menu.map((item, index) => (
+                        {menu && menu.length > 0 && menu.map((item, index) => (
                             <li key={index} className="menu-item text-foreground w-full md:w-auto">
                                 <a
                                     onClick={() => setMenuOpen(!menuOpen)}

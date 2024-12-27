@@ -2,7 +2,7 @@
   "header": {
     "logo": {
       "image": {
-        "src": "",
+        "src": "/logo.png",
         "alt": "Company Logo"
       }
     },
