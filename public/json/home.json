@@ -119,32 +119,6 @@
     ]
   },
   "contactSection": {
-    "title": "Lets start something <span>new</span> together",
-    "accordion": [
-      {
-        "title": "How do I sign up?",
-        "bodyText": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
-      },
-      {
-        "title": "What information do I need to provide during the sign-up process?",
-        "bodyText": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
-      },
-      {
-        "title": "Is my information secure during the sign-up process?",
-        "bodyText": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
-      },
-      {
-        "title": "Who can apply?",
-        "bodyText": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
-      },
-      {
-        "title": "What are the terms and conditions for the collaboration?",
-        "bodyText": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
-      },
-      {
-        "title": "What is the minimum duration of the contract?",
-        "bodyText": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
-      }
-    ]
+    "title": "Lets start<br /> something<br /> <span>new</span><br /> together"
   }
 }
