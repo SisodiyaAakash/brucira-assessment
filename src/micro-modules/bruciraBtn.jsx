@@ -1,4 +1,3 @@
-import React from "react";
 import btnIcon from "../assets/icons/btn-icon-red.svg";
 
 const BruciraBtn = ({ text, isIcon, link }) => {

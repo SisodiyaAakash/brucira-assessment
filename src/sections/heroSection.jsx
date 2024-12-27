@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import BruciraBtn from "../micro-modules/bruciraBtn";
 import playIcon from "../assets/icons/play.svg";
 

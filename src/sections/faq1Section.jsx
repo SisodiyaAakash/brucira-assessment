@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 
 const Faq1Section = ({ data }) => {
     // State to track the active accordion index

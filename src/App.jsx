@@ -8,6 +8,7 @@ import PartnersLogoSection from "./sections/partnersLogoSection";
 import Faq1Section from "./sections/faq1Section";
 import GlobalNumberSection from "./sections/globalNumberSection";
 import TestimonialSection from "./sections/testimonialSection";
+import Faq2Section from "./sections/faq2Section";
 
 function App() {
   const [homeData, setHomeData] = useState(null);
@@ -76,6 +77,7 @@ function App() {
         data={homeData.testimonialSection}
         reviews={reviewsData.reviews}
       />
+      <Faq2Section data={homeData.faq2Section} />
 
       <Footer />
     </>

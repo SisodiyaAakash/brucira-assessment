@@ -113,7 +113,7 @@ body {
 
   button,
   .brucira-btn {
-    @apply text-base md:text-lg font-body font-bold text-center uppercase max-w-max flex items-center justify-center gap-2.5 px-6 py-3 md:px-8 md:py-5 rounded-[34px] bg-red text-white border border-red duration-300 hover:bg-transparent hover:text-red cursor-pointer;
+    @apply text-base md:text-lg font-body font-bold text-center uppercase max-w-max flex items-center justify-center gap-2.5 px-6 py-3 md:px-8 md:py-5 rounded-[34px] bg-red text-white border-[1.6px] border-red duration-300 hover:bg-transparent hover:text-red cursor-pointer;
   }
 }
 

@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from "react";
+import { useEffect, useRef } from "react";
 
 const PartnersLogoSection = ({ data }) => {
     const containerRef = useRef(null);
