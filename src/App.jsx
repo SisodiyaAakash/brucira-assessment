@@ -10,12 +10,14 @@ import GlobalNumberSection from "./sections/globalNumberSection";
 import TestimonialSection from "./sections/testimonialSection";
 import Faq2Section from "./sections/faq2Section";
 import ContactSection from "./sections/contactSection";
+import LabelSliderSection from "./sections/labelSliderSection";
 
 function App() {
   const [homeData, setHomeData] = useState(null);
   const [teamData, setTeamData] = useState(null);
   const [statisticsData, setStatisticsData] = useState(null);
   const [reviewsData, setReviewsData] = useState(null);
+  const [sliderLabelData, setSliderLabelData] = useState(null);
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
@@ -37,11 +39,16 @@ function App() {
         const reviewsResponse = await fetch("/json/comps/reviews.json");
         const reviewsJson = await reviewsResponse.json();
 
+        // Fetch label-slider.json
+        const sliderLabelResponse = await fetch("/json/comps/label-slider.json");
+        const sliderLabelJson = await sliderLabelResponse.json();
+
         // Set both data states
         setHomeData(homeJson);
         setTeamData(teamJson);
         setStatisticsData(statisticsJson);
         setReviewsData(reviewsJson);
+        setSliderLabelData(sliderLabelJson);
       } catch (error) {
         console.error("Error loading JSON data:", error);
       } finally {
@@ -83,6 +90,7 @@ function App() {
         data={homeData.contactSection}
         team={teamData.team}
       />
+      <LabelSliderSection labels={sliderLabelData.labels} />
 
       <Footer />
     </>
