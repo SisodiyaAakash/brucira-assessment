@@ -10,7 +10,7 @@ This project is created as the practical assessment for the **Brucira**.
    - Created **json** files to manage the different data for the different components, it was created as static json files located in the public.
 
 2. **Responsive Design**
-   - Fully responsive UI using **Tailwind CSS**.
+   - Fully responsive UI using **Tailwind CSS** along with the **Dark mode** implementation with Tailwind classes.
 
 3. **Less third party dependencies**
    - Utlized as less dependencies to avoid redudancies in libraries that leads to better performance and other advantages as well.
